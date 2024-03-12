@@ -93,18 +93,24 @@ body {
 .anmateicon{
     transform: rotate(360deg);
     transform: translatex(30px);
-
-
 }
 
 .bars{
     font-size: 20px;
     display: none;
 }
-
-.active{
+.wishlist.active{
     display: block;
 }
+
+.lang.active{
+    display: block;
+}
+
+.toggele.active{
+    display: block;
+}
+
 @media (min-width:320px) and (max-width:767px){
     .bars{
         display: block;
@@ -113,6 +119,7 @@ body {
     .wishlist , .lang ,.toggele{
         padding: 10px;
         width: 100%;
+     
         margin-top: 20px;
         background-color: white;
         display: none;

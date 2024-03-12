@@ -36,10 +36,9 @@ const Header = ({ changeAr, changeEn }) => {
         changeEn()
     }
     const showActive=()=>{
-        // darkref.current.classList.add('active');
-        // wishlistref.current.classList.add('active');
-        // langref.current.classList.add('active');
-        document.querySelector('.wishlist').classList.add('active')
+        darkref.current.classList.toggle('active');
+    wishlistref.current.classList.toggle('active');
+    langref.current.classList.toggle('active');
     
     }
     return (
