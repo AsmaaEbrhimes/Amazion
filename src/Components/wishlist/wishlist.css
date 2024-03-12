@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header_canvs{
+    position: relative;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.canvs_img{
+   position: relative;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.salary_wishlist{
+    color: red;
+}
+.delete_wishlist{
+    position:absolute;
+    background-color: red;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    line-height: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.wishlist_title{
+    font-size: 15px;
+}

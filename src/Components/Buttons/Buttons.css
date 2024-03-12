@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Buttons Button {
+    margin-left: 4px;
+}
+
+
+@media (min-width:320px) and (max-width:767px) {
+    .Buttons Button {
+        width: 90px;
+        font-size: 10px;
+    }
+}

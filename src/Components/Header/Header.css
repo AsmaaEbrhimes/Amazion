@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 30px !important;
+    background-color: rgba(240, 234, 234, 0.397);
+}
+
+.shopping_length {
+    position: relative;
+}
+
+.shopping {
+    margin-left: 20px;
+    font-size: 25px;
+    color: chartreuse;
+    cursor: pointer;
+}
+
+.shopping_length span {
+    content: "";
+    position: absolute;
+    top: -10px;
+    color: white;
+    left: 40px;
+    background-color: rgba(36, 230, 36, 0.996);
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+.lang{
+  
+    position: relative;
+   
+}
+.user {
+    font-size: 20px;
+    color: chartreuse;
+    cursor: pointer;
+
+}
+
+.wishlist {
+    padding: 0;
+    margin: 0;
+    color: red;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgb(162, 158, 158),
+        inset 0 0 10px rgb(162, 158, 158);
+}
+
+.icon_darklight img {
+    width: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    left: 0;
+    transition: 0.5s linear;
+
+}
+
+.anmateicon{
+    transform: rotate(360deg);
+    transform: translatex(30px);
+
+
+}
+
+.bars{
+    font-size: 20px;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+@media (min-width:320px) and (max-width:767px){
+    .bars{
+        display: block;
+        margin-left: 9px;
+    }
+    .wishlist , .lang ,.toggele{
+        padding: 10px;
+        width: 100%;
+        margin-top: 20px;
+        background-color: white;
+        display: none;
+    }
+
+}
+@media (min-width:767px) and (max-width:1200px){
+    .wishlist{
+        position: relative;
+        margin-right: 100px;
+    }
+    .lang{
+        position: relative;
+       left: -70px;
+        width: 100px;
+    }
+    .toggele{
+     position: relative;
+    
+    }
+}

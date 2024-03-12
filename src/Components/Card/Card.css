@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inf_product {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+.inf_product img {
+    width: 100%;
+    height: calc(100% - 50%);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s linear;
+}
+
+.inf_product:hover img {
+    transform: scale(1.1);
+}
+
+.inf_product .btns {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: fuchsia;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+.inf_product .btns:hover {
+    font-size: 15px;
+    margin-top: 30px;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.loding {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation: loding 0.5s infinite;
+}
+
+@keyframes loding {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.overlay {
+    background-color: white;
+    position: absolute;
+    top: 170px;
+    right: -15px;
+    cursor: pointer;
+    text-align: center;
+    width: 0;
+    overflow: hidden;
+    transition: 0.2s linear;
+}
+
+.inf_product:hover .overlay {
+    width: 40px;
+    padding: 10px;
+}
+
+.overlay i {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+.heart {
+    color: black;
+}
+.red{
+    color: red;
+}
+.minimize,
+.glass {
+    color: black;
+
+}
