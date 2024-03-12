@@ -24,7 +24,7 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 500);
+        }, 3500);
     }, []);
 
     const changeAr = () => {
